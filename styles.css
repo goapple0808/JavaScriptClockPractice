@@ -1,0 +1,28 @@
+body{
+  text-align: center;
+  background-position: center center;
+  background-image: url("img/216339.jpg");
+  background-size: cover;/*這裡是讓我們的background image fit the window size*/
+  background-repeat: no-repeat;/*不要因為大小不足就重複*/
+  background-attachment: fixed;/*當滾動視窗的時候不會讓背景移動*/
+}
+.time{
+  margin: 16rem 0 0 0 ;
+  font-size: 7rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #009DAE;
+}
+
+@media only screen and (max-width:640px) {
+  .time{
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-height:410px){
+  .time{
+    position: relative;
+    bottom: 200px;
+    left : auto;
+  }
+}
